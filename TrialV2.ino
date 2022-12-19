@@ -33,7 +33,7 @@ float celsius;
   {
     int x =  ADC_Read(0);// a function to read the ADC component (buttons) and expecting an integer = x
     int t =  ADC_Read(sensor);// a function to read the ADC component (sensor) and expecting an integer = t
-    t = -(t*500)/1023; // equation to convert the Analogue value to Celsius (temperature reading)
+    t = (t*500)/1023; // equation to convert the Analogue value to Celsius (temperature reading)
 
     //To convert a 10-bit ADC value into a string of readable numbers
     // We  use a function called itoa (short for Integer TO ASCII)
